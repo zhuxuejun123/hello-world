@@ -1,0 +1,3 @@
+language: C++
+
+install: ls -alF && g++ main.cc -o main
