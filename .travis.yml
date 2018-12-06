@@ -1,19 +1,10 @@
-language:
-    - cpp
+language: C++
 
 dist: xenial
 
 install:
-    - ls -alF
-    - python3 --version
-    - sudo apt-get install python3.5
     - sudo apt-get install gcc-aarch64-linux-gnu
-    - sudo apt-get install g++-aarch64-linux-gnu
-    - aarch64-linux-gnu-gcc -v
-    - aarch64-linux-gnu-g++ -v
-    - python2 --version
-    - python3 --version
-
-script: 
-    - g++ main.cc -o main && ./main
-- python main.py
+    
+script:
+  - sudo apt-get install python3.5
+  
