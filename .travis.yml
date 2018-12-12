@@ -2,6 +2,8 @@ language: C++
 
 dist: xenial
 
+if: type = push
+
 install:
     - sudo apt-get install gcc-aarch64-linux-gnu
     
