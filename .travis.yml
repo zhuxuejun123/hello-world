@@ -1,5 +1,5 @@
 language: C++
-
+if: type = push
 dist: xenial
 
 install:
@@ -10,10 +10,4 @@ script:
   
 after_success:
     - sudo apt-get install pylint
-deploy:
-  - provider: cloudcontrol
-    email: "YOUR CLOUDCONTROL EMAIL"
-    password: "YOUR CLOUDCONTROL PASSWORD"
-    deployment: "APP_NAME/DEP_NAME"
-  - provider: heroku
-    api_key: "YOUR HEROKU API KEY"
+
